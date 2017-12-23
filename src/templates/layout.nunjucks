@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        
+	<title>{% block sitetitle %} {% endblock %}</title>
+        
+	<link rel="shortcut icon" type="image/icon" href="favicon.ico"/>
+
+	<!-- add your custom css files below in the correct order -->
+	<!--build:css css/main.min.css -->
+        <link rel="stylesheet" href="css/main.css">
+        <!--endbuild-->
+
+    </head>
+    <body>
+	{% block content %} {% endblock %}
+
+	<!-- add your custom js files below -->
+	<!--build:js js/main.min.js-->
+        <script src="js/main.js"></script>
+        <!--endbuild-->
+    </body>
+</html>

@@ -1,0 +1,12 @@
+{% extends 'layout.nunjucks' %}
+
+{% block title %}
+	{# title from the data.json file #}
+	{{siteinfo.title}}	
+{% endblock %}
+
+{% block content %}
+	<h1 class="blue">Welcome to Index Page</h1>
+	{% include 'partials/example-partial.nunjucks' %}
+	<button onClick="sayHello()">Say Hello</button>
+{% endblock %}
